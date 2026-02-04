@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Dla Ciebie 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hearts-container" id="hearts"></div>
+
+    <div class="envelope-container" id="envelope-container">
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body">
+                <div class="heart-seal">💕</div>
+            </div>
+            <p class="click-hint">Kliknij, żeby otworzyć</p>
+        </div>
+    </div>
+
+    <div class="card-container" id="card-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="sparkles" id="sparkles"></div>
+
+                <h1 class="title">Dominika...</h1>
+
+                <div class="heart-divider">
+                    <span class="heart-icon">💖</span>
+                </div>
+
+                <p class="message">
+                    Jesteś najpiękniejszą rzeczą, jaka mi się przydarzyła.
+                    Każdy dzień z Tobą jest jak bajka, którą chcę przeżywać w nieskończoność.
+                </p>
+
+                <p class="message secondary">
+                    Dziękuję, że jesteś. Dziękuję, że pozwalasz mi Cię kochać.
+                </p>
+
+                <div class="hearts-row">
+                    <span class="floating-heart" style="--delay: 0s">💕</span>
+                    <span class="floating-heart" style="--delay: 0.5s">💗</span>
+                    <span class="floating-heart" style="--delay: 1s">💖</span>
+                    <span class="floating-heart" style="--delay: 1.5s">💓</span>
+                    <span class="floating-heart" style="--delay: 2s">💕</span>
+                </div>
+
+                <p class="signature">
+                    Twój Damian ❤️
+                </p>
+
+                <div class="rose-decoration">🌹</div>
+
+                <!-- Question Section - NOW INSIDE THE CARD! -->
+                <div class="question-section" id="question-section">
+                    <h2 class="question-title">Więc... Dominika 🥺</h2>
+                    <p class="question-text">Czy zostaniesz moją Walentynką?</p>
+                    <div class="buttons-container">
+                        <button class="yes-btn" id="yes-btn">TAK! 💕</button>
+                        <button class="no-btn" id="no-btn">Nie 😢</button>
+                    </div>
+                </div>
+
+                <!-- Celebration - NOW INSIDE THE CARD! -->
+                <div class="celebration hidden" id="celebration">
+                    <h2 class="celebration-title clickable-text" id="celebration-title">No i git! 😎</h2>
+                    <p class="celebration-text clickable-text" id="celebration-text">Wiedziałem że się zgodzisz.</p>
+                    <div class="big-heart clickable-text" id="big-heart">😏</div>
+
+                    <div class="photo-gallery">
+                        <div class="photo-frame">
+                            <img src="assets/bear1.png" alt="Cute Bears" id="img-left">
+                        </div>
+                        <div class="photo-frame">
+                            <img src="assets/photo1.png" alt="Romantic Scene" id="img-right">
+                        </div>
+                    </div>
+
+                    <p class="click-hint glow-hint">👆 Kliknij gdziekolwiek żeby kontynuować! 👆</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="replay-btn" id="replay">✨ Jeszcze raz ✨</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
