@@ -139,7 +139,7 @@ function setupFunnyButtons() {
     const funnyTexts = [
         "Nie? Serio? 😏", "Spróbuj jeszcze! 🏃", "Nope! 💨", "Za wolno! ⚡",
         "Haha! 😂", "Nie tym razem!", "Złap mnie! 😜",
-        "Nie ma szans!", "Próbuj dalej! 🎯", "Uparty/a jesteś! 😤"
+        "Nie ma szans!", "Próbuj dalej! 🎯", "Uparta jesteś! 😤"
     ];
 
     let textIndex = 0;
@@ -224,7 +224,7 @@ function startUnifiedCelebration() {
         { title: "A co jak bym był kotem?", text: "Nadal byś mnie chciała?", emoji: "🐱" },
         { title: "Dobra, dobra...", text: "Nie przymilam się za bardzo?", emoji: "🤔" },
         { title: "Okej, serio teraz", text: "Dziękuję że jesteś 💜", emoji: "🥹" },
-        { title: "PS.", text: "Robię Ci kolację czy zamawiamy?", emoji: "🍕" },
+        { title: "PS.", text: "Robimy kolację czy zamawiamy?", emoji: "🍕" },
         { title: "Kocham Cię ❤️", text: "(To już koniec, ale możesz klikać dalej!)", emoji: "💕" }
     ];
 
