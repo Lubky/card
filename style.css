@@ -236,7 +236,7 @@ body {
     width: 90vw;
     /* Remove fixed height */
     height: auto;
-    max-height: 800px;
+    max-height: none;
     overflow: visible;
     box-shadow:
         0 25px 80px rgba(0, 0, 0, 0.4),
