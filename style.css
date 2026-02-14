@@ -589,6 +589,9 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
+    touch-action: none;   /* Blokuje gesty systemowe, przyspiesza reakcję na dotyk */
+    user-select: none;    /* Zapobiega zaznaczaniu tekstu przy szybkim klikaniu */
+    transition: left 0.2s ease, top 0.2s ease; /* Opcjonalne: płynniejszy ruch */
 }
 
 .yes-btn {
