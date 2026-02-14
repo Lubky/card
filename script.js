@@ -228,8 +228,8 @@ function startUnifiedCelebration() {
         { title: "Kocham Cię ❤️", text: "(To już koniec, ale możesz klikać dalej!)", emoji: "💕" }
     ];
 
-    const bears = ['bear1.png', 'bear2.png', 'bear3.png'];
-    const photos = ['photo1.png', 'photo2.png'];
+    const bears = ['b1.jpg', 'b2.jpg', 'b3.jpg', 'b4.jpg', 'b5.jpg', 'b6.jpg', 'b7.jpg', 'b8.jpg'];
+    const photos = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg'];
 
     // State
     let masterIndex = 0;
