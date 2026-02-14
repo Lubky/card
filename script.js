@@ -220,11 +220,11 @@ function startUnifiedCelebration() {
 
     // Content Arrays
     const textSequence = [
-        { title: "No i git! 😎", text: "Wiedziałem że się zgodzisz.", emoji: "😏" },
-        { title: "A co jak bym był kotem?", text: "Nadal byś mnie chciała?", emoji: "🐱" },
+        { title: "No i git! 😎", text: "Wiedziałem że się zgodzisz, ale i tak mi ulżyło.", emoji: "😏" },
+        { title: "A co jak bym był ziemniakiem?", text: "Nadal byś mnie chciała?", emoji: "🐱" },
         { title: "Dobra, dobra...", text: "Nie przymilam się za bardzo?", emoji: "🤔" },
         { title: "Okej, serio teraz", text: "Dziękuję że jesteś 💜", emoji: "🥹" },
-        { title: "PS.", text: "Robimy kolację czy zamawiamy?", emoji: "🍕" },
+        { title: "PS.", text: "Ty wybierasz film, a ja robię kolację.", emoji: "🍕" },
         { title: "Kocham Cię ❤️", text: "(To już koniec, ale możesz klikać dalej!)", emoji: "💕" }
     ];
 
