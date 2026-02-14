@@ -145,27 +145,29 @@ function setupFunnyButtons() {
     let textIndex = 0;
 
     // No button runs away - stays strictly within the card container!
-    noBtn.addEventListener('mouseover', () => {
-        const cardInner = document.querySelector('.card-inner');
+    const moveNoButton = (e) => {
+    // Jeśli to dotyk, zablokuj standardowe zachowanie (zoom, kliknięcie)
+    if (e.type === 'touchstart') {
+        e.preventDefault();
+    }
 
-        // First hover: element leaves the flow and becomes absolute in the card context
+    const cardInner = document.querySelector('.card-inner');
+
+    // Przeniesienie przycisku do card-inner przy pierwszej interakcji
         if (noBtn.parentElement !== cardInner) {
             noBtn.style.position = 'absolute';
             cardInner.appendChild(noBtn);
         }
 
-        // Button dimensions (dynamic!)
         const btnWidth = noBtn.offsetWidth || 150;
         const btnHeight = noBtn.offsetHeight || 50;
 
-        // Get card dimensions and scroll position
         const card = document.querySelector('.card');
         const cardWidth = card.clientWidth;
         const cardHeight = card.clientHeight;
         const scrollTop = card.scrollTop;
 
-        // Ensure movement stays within visible area roughly
-        const margin = 50;
+        const margin = 30; // Zmniejszyłem lekko margines, by łatwiej było mu uciekać
         const minX = margin;
         const maxX = Math.max(margin, cardWidth - btnWidth - margin);
         const minY = scrollTop + margin;
@@ -187,7 +189,11 @@ function setupFunnyButtons() {
         const newScale = Math.min(currentScale + 0.1, 1.8);
         yesBtn.dataset.scale = newScale;
         yesBtn.style.transform = `scale(${newScale})`;
-    });
+    };
+
+    // 2. Podpinamy oba zdarzenia
+    noBtn.addEventListener('mouseover', moveNoButton);
+    noBtn.addEventListener('touchstart', moveNoButton, { passive: false });
 
     // Yes button - Start Celebration!
     yesBtn.addEventListener('click', () => {
